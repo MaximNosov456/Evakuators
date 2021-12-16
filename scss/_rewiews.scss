@@ -1,0 +1,114 @@
+.rewiews {
+    &__wrapper {
+        margin-top: 45px;
+        padding-bottom: 115px;
+        padding-top: 70px;
+        background-image: url("../images/slider-bg.png");
+        background-repeat: no-repeat;
+        background-position: bottom right -40px;
+        background-size: contain;
+        @media (max-width: 544px) {
+            padding-bottom: 75px;
+            padding-top: 0px;
+        }
+    }
+    &__link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper-rewiews {
+        overflow: hidden;
+        height: 650px;
+        text-align: right;
+        position: relative;
+        @media (max-width: 768px) {
+            padding-right: 115px;
+        }
+        @media (max-width: 700px) {
+            padding-right: 0;
+        }
+    }
+
+    .swiper-wrapper {
+        align-items: center;
+        @media (max-width: 1023px) {
+            align-items: flex-end;
+        }
+        @media (max-width: 585px) {
+            align-items: center;
+        }
+    }
+
+    .swiper-slide {
+        box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        width: 455px;
+        height: 220px;
+        filter: brightness(0.6);
+        @media (max-width: 800px) {
+            width: 336px;
+            height: 210px;
+        }
+        @media (max-width: 585px) {
+            width: 220px;
+            height: 90px;
+        }
+    }
+
+    .swiper-slide-active {
+        position: relative;
+        z-index: 100;
+        transition: all 0.7s;
+        transform: translateX(-150px) scale(1.5);
+        box-shadow: none;
+        filter: brightness(1);
+        @media (max-width: 1050px) {
+            transform: translateX(-120px) scale(1.4);
+        }
+
+        @media (max-width: 585px) {
+            transform: translateX(0px) scale(1.3);
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        z-index: 2000;
+        left: 85px;
+        @media (max-width: 1367px) {
+            left: 85px;
+        }
+
+        @media (max-width: 1025px) {
+            left: 52px;
+        }
+        @media (max-width: 769px) {
+            left: 90px;
+        }
+
+        @media (max-width: 585px) {
+            left: 0px;
+            width: 14px;
+            height: 9px;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        top: 85%;
+    }
+
+    .swiper-button-next {
+        top: 15%;
+    }
+}

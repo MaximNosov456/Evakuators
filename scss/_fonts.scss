@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Acrom";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Acrom-Regular"), url("../fonts/Acrom-Regular.woff2") format("woff2"),
+        url("../fonts/Acrom-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acrom";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Acrom-Medium"), url("../fonts/Acrom-Medium.woff2") format("woff2"),
+        url("../fonts/Acrom-Medium.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acrom";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Acrom-Bold"), url("../fonts/Acrom-Bold.woff2") format("woff2"),
+        url("../fonts/Acrom-Bold.woff") format("woff");
+    font-display: swap;
+}

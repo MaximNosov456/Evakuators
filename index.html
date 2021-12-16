@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <a class="logo" href="#">
+                        <img class="logo-img" src="images/logo.png" alt="">
+                    </a>
+
+                    <div class="header__name">Эвакуатор <br>
+                        в Нижнем Новгороде</div>
+                    <div class="header__info">Круглосуточная служба эвакуации в Нижнем Новгороде и области</div>
+                </div>
+
+                <ul class="header__social">
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <img src="images/social/telegram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <img src="images/social/whatsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <img src="images/social/viber.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__phone">
+                    <a class="header__phone-link" href="tel:+79081609602">+7 (908) 160-96-02</a>
+                    <button class="header__phone-order">Заказать звонок</button>
+                    <button class="header__phone-mobile">
+                        <img src="images/phone.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="top"></div>
+
+    <section class="forms">
+        <form class="form" action="#">
+            <div class="form-block form-block-1">
+                <h2 class="form__title">
+                    Рассчитать стоимость эвакуации
+                </h2>
+                <div class="form__inputs">
+                    <input class="form__input form__input-1" type="text" placeholder="Откуда забрать?" name='from'>
+                    <input class="form__input form__input-2" type="text" placeholder="Куда доставить?" name='to'>
+                    <button class="form__btn form__btn-1" type="button"><span>Далее</span></button>
+                </div>
+            </div>
+
+            <div class="form-block form-block-2">
+                <div class="form__left">
+                    <h2 class="form__title">Укажите вес вашего авто:</h2>
+                    <div class="form__left-grid">
+                        <label class="form__left-label">
+                            <span class="form__text">Мотоцикл</span>
+                            <span class="form__text">0,05 - 0,35 т.</span>
+                            <input class="form__left-radio" type="radio" name="weigth">
+                            <span class="form__left-styled"></span>
+                        </label>
+                        <label class="form__left-label">
+                            <span class="form__text">Легковой</span>
+                            <span class="form__text">1,0 - 3,5 т.</span>
+                            <input class="form__left-radio" type="radio" name="weigth" checked>
+                            <span class="form__left-styled"></span>
+                        </label>
+                        <label class="form__left-label">
+                            <span class="form__text">Микроавтобус</span>
+                            <span class="form__text">3,5 т.</span>
+                            <input class="form__left-radio" type="radio" name="weigth">
+                            <span class="form__left-styled"></span>
+                        </label>
+                        <label class="form__left-label">
+                            <span class="form__text">Спецтехника</span>
+                            <span class="form__text">3,5 т.</span>
+                            <input class="form__left-radio" type="radio" name="weigth">
+                            <span class="form__left-styled"></span>
+                        </label>
+                        <label class="form__left-label">
+                            <span class="form__text">Джип</span>
+                            <span class="form__text"> 1,3 - 6,5 т.</span>
+                            <input class="form__left-radio" type="radio" name="weigth">
+                            <span class="form__left-styled"></span>
+                        </label>
+                        <label class="form__left-label">
+                            <span class="form__text">Внедорожная эвакуация</span>
+                            <span class="form__text">3,5 т.</span>
+                            <input class="form__left-radio" type="radio" name="weigth">
+                            <span class="form__left-styled"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form__right">
+                    <h2 class="form__title">Блокировка колес:</h2>
+                    <div class="form__blocks">
+                        <label class="form__right-label">
+                            <input class="form__right-radio" type="radio" name="block" checked>
+                            <span class="form__right-styled"></span>
+                            <span class="form__text">Да</span>
+                        </label>
+                        <label class="form__right-label">
+                            <input class="form__right-radio" type="radio" name="block">
+                            <span class="form__right-styled"></span>
+                            <span class="form__text">Нет</span>
+                        </label>
+                    </div>
+
+                    <button class="form__btn form__btn-2"><span>Далее</span></button>
+                </div>
+            </div>
+
+            <div class="form-block form-block-3">
+                <div class="form__price">
+                    <h2 class="form__title">Стоимость эвакуации:</h2>
+                    <div class="form__price-num"> 20 000 руб</div>
+                </div>
+
+                <div class="form__contacts">
+                    <h2 class="form__title">Вызвать эвакуатор:</h2>
+                    <div class="form__contacts-inputs">
+                        <input class="form__contacts-input" type="text" name="firstName" placeholder="Ваше имя"
+                            required>
+                        <input class="form__contacts-input masked" type="tel" name="phone"
+                            placeholder="+7 (___) ___-__-__" required>
+                        <button class="form__contacts-btn form__btn-3" type="submit">Вызвать</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <main class="main">
+
+
+        <section class="benefits">
+            <div class="container-fluid">
+                <div class="benefits__info">
+                    <div class="benefits__img-wrapper">
+                        <img class="benefits__img" src="images/benefits-img.jpg" alt="">
+                        <a class="benefits__play" href="https://www.youtube.com/watch?v=fUw5ulRKAZw" data-fancybox>
+                            <img src="images/benefits-play.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="benefits__box">
+                        <h1 class="benefits__title">Эвакуатор </h1>
+                        <p class="benefits__text">Даже небольшая поломка в пути может обернуться настоящей трагедией
+                            на весь
+                            день. Не нужно тратить собственное время попусту. Вы можете срочно вызвать эвакуатор
+                            в Нижнем
+                            Новгороде и области, чтобы повреждённый автомобиль перевезли в автосервис.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefits__items">
+                    <div class="container">
+                        <div class="benefits__inner">
+                            <picture>
+                                <source srcset="images/car-mobile.png" media="(max-width: 1315px)">
+                                <img class="benefits__car" src="images/car.png" alt="">
+                            </picture>
+
+                            <div class="benefits__item benefits__item-1">Время ожидания
+                                от 15 минут</div>
+                            <div class="benefits__item benefits__item-2">Дешево: <br>
+                                от 1 000 руб</div>
+                            <div class="benefits__item benefits__item-3">Наличный <br>
+                                и безналичный расчет</div>
+                            <div class="benefits__item benefits__item-4">Грузоподъемность
+                                до 5 тонн</div>
+
+                            <div class="benefits__item benefits__item-5">Увезем до 5 пассажиров</div>
+                            <div class="benefits__item benefits__item-6">Работаем <br>
+                                круглосуточно</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cars">
+            <div class="container">
+                <h2 class="title title-2 cars__title">Мы <br> перевозим</h2>
+                <div class="tabs-wrapper">
+                    <div class="tabs">
+                        <button class="tab cars__tab" type="button" data-anchor='#tab-content-1'>Мотоциклы</button>
+                        <button class="tab cars__tab tab--active" type="button"
+                            data-anchor='#tab-content-2'>Легковые</button>
+                        <button class="tab cars__tab" type="button" data-anchor='#tab-content-3'>спецтехника</button>
+                        <button class="tab cars__tab" type="button" data-anchor='#tab-content-4'>Микроавтобус</button>
+                        <button class="tab cars__tab" type="button" data-anchor='#tab-content-5'>Джипы</button>
+                    </div>
+
+                    <div class="cars__content">
+                        <div id="tab-content-1" class="tab-content">
+                            <h4 class="cars__content-title">Мотоциклы</h4>
+                            <div class="cars__content-weight">до 3,5 т</div>
+                            <img class="cars__content-img" src="images/prices/1.png" alt="">
+                        </div>
+                        <div id="tab-content-2" class="tab-content tab-content--active">
+                            <h4 class="cars__content-title">Легковые</h4>
+                            <div class="cars__content-weight">до 3,5 т</div>
+                            <img class="cars__content-img" src="images/cars-content-img.png" alt="">
+                        </div>
+                        <div id="tab-content-3" class="tab-content">
+                            <h4 class="cars__content-title">спецтехника</h4>
+                            <div class="cars__content-weight">до 3,5 т</div>
+                            <img class="cars__content-img" src="images/prices/4.png" alt="">
+                        </div>
+                        <div id="tab-content-4" class="tab-content">
+                            <h4 class="cars__content-title">Микроавтобус</h4>
+                            <div class="cars__content-weight">до 3,5 т</div>
+                            <img class="cars__content-img" src="images/prices/3.png" alt="">
+                        </div>
+                        <div id="tab-content-5" class="tab-content">
+                            <h4 class="cars__content-title">Джипы</h4>
+                            <div class="cars__content-weight">до 3,5 т</div>
+                            <img class="cars__content-img" src="images/prices/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+            <div class="container">
+                <h2 class="title prices__title">Прайс</h2>
+
+                <div class="prices-card">
+                    <h4 class="prices-card__title">Мотоциклы </h4>
+                    <ul class="prices-card__list">
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижний Новгород</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижегородская область</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Межгород</div>
+                            <div class="prices-card__right">от 40 руб/км</div>
+                        </li>
+                    </ul>
+
+                    <img class="prices-card__img" src="images/prices/1.png" alt="">
+                </div>
+                <div class="prices-card">
+                    <h4 class="prices-card__title">Легковые автомобили </h4>
+                    <ul class="prices-card__list">
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижний Новгород</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижегородская область</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Межгород</div>
+                            <div class="prices-card__right">от 40 руб/км</div>
+                        </li>
+                    </ul>
+
+                    <img class="prices-card__img" src="images/prices/2.png" alt="">
+                </div>
+                <div class="prices-card">
+                    <h4 class="prices-card__title">МИкроавтобусы </h4>
+                    <ul class="prices-card__list">
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижний Новгород</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижегородская область</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Межгород</div>
+                            <div class="prices-card__right">от 40 руб/км</div>
+                        </li>
+                    </ul>
+
+                    <img class="prices-card__img" src="images/prices/3.png" alt="">
+                </div>
+                <div class="prices-card">
+                    <h4 class="prices-card__title">Спецтехника </h4>
+                    <ul class="prices-card__list">
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижний Новгород</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижегородская область</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Межгород</div>
+                            <div class="prices-card__right">от 40 руб/км</div>
+                        </li>
+                    </ul>
+
+                    <img class="prices-card__img" src="images/prices/4.png" alt="">
+                </div>
+                <div class="prices-card">
+                    <h4 class="prices-card__title">Джипы </h4>
+                    <ul class="prices-card__list">
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижний Новгород</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижегородская область</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Межгород</div>
+                            <div class="prices-card__right">от 40 руб/км</div>
+                        </li>
+                    </ul>
+
+                    <img class="prices-card__img" src="images/prices/5.png" alt="">
+                </div>
+                <div class="prices-card">
+                    <h4 class="prices-card__title">Внедорожная эвакуация </h4>
+                    <ul class="prices-card__list">
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижний Новгород</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Нижегородская область</div>
+                            <div class="prices-card__right">от 1 600 руб</div>
+                        </li>
+                        <li class="prices-card__item">
+                            <div class="prices-card__left">Межгород</div>
+                            <div class="prices-card__right">от 40 руб/км</div>
+                        </li>
+                    </ul>
+
+                    <img class="prices-card__img" src="images/prices/6.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="rewiews">
+            <div class="container">
+                <h3 class="title">Видеоотзывы</h3>
+            </div>
+            <div class="rewiews__wrapper">
+                <div class="container">
+                    <div class="swiper-rewiews">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="rewiews__link" href="https://www.youtube.com/watch?v=fUw5ulRKAZw"
+                                    data-fancybox>
+                                    <img class="rewiews__img" src="images/rewiew-img.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="rewiews__link" href="https://www.youtube.com/watch?v=fUw5ulRKAZw"
+                                    data-fancybox>
+                                    <img class="rewiews__img" src="images/test.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="rewiews__link" href="https://www.youtube.com/watch?v=fUw5ulRKAZw"
+                                    data-fancybox>
+                                    <img class="rewiews__img" src="images/rewiew-img.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="rewiews__link" href="https://www.youtube.com/watch?v=fUw5ulRKAZw"
+                                    data-fancybox>
+                                    <img class="rewiews__img" src="images/rewiew-img.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="images/arrow-down.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="images/arrow-up.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="accordion">
+            <div class="container">
+                <h3 class="title">Вопрос - ответ</h3>
+                <div class="accordion__content">
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор?</span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор?</span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор?</span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор?</span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор?</span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор? В течение какого времени приедет
+                                эвакуатор?
+                            </span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h4 class="accordion__title">
+                            <span>В течение какого времени приедет эвакуатор?</span>
+                        </h4>
+                        <div class="accordion__text">
+                            Максимальная масса автомобиля не должна превышать 5 тонны.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="call">
+            <div class="container">
+                <h3 class="title title-2 call__title">Как вызвать эвакуатор <span>автомобиля в Нижнем Новгороде?</span>
+                </h3>
+                <ul class="call__list">
+                    <li class="call__list-item">
+                        <div class="call__num call__num-1">01</div>
+                        <p class="call__text">Чтобы вызвать машину с профессионалом за рулем, необходимо набрать номер 8
+                            (908) 160-96-02. Можете оставить заявку на сайте, чтобы с Вами связались квалифицированные
+                            менеджеры.
+                        </p>
+                    </li>
+                    <li class="call__list-item">
+                        <div class="call__num call__num-2">02</div>
+                        <p class="call__text">Чтобы вызвать машину с профессионалом за рулем, необходимо набрать номер 8
+                            (908) 160-96-02. Можете оставить заявку на сайте, чтобы с Вами связались квалифицированные
+                            менеджеры.
+                        </p>
+                    </li>
+                    <li class="call__list-item">
+                        <div class="call__num call__num-3">03</div>
+                        <p class="call__text">Чтобы вызвать машину с профессионалом за рулем, необходимо набрать номер 8
+                            (908) 160-96-02. Можете оставить заявку на сайте, чтобы с Вами связались квалифицированные
+                            менеджеры.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="gallery">
+            <div class="container">
+                <h3 class="title  gallery__title">Наши эвакуаторы в работе</h3>
+                <div class="gallery__grid">
+                    <a class="gallery__item gallery__item-1" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/2.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/2.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/3.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/3.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="">
+                    </a>
+                    <a class="gallery__item gallery__item-5" href="images/gallery/3.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/3.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/2.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/2.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="">
+                    </a>
+                    <a class="gallery__item" href="images/gallery/1.jpg" data-fancybox="gallery">
+                        <img class="gallery__img" src="images/gallery/1.jpg" alt="">
+                    </a>
+                </div>
+
+                <button class="gallery__more">
+                    смотреть еще
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copy">Copyright © 2020г</div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link" href="#">Пользовательское соглашение</a>
+                    <a class="footer__link" href="#">Публичная оферта</a>
+                </div>
+
+                <a class="footer__logo" href="#">
+                    <div class="footer__logo-text">Разработка сайтов</div>
+                    <img src="images/artix.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal-overlay-loading">
+        <div class="modal">
+            <img class="modal__img" src="images/car-mobile.png" alt="" height="200">
+            <img class="modal__loader" src="images/loader.svg" alt="" height="60">
+            <h3 class="modal__title"><span class="modal__load-num">1</span>%</h3>
+            <p class="modal__text">ЗАГРУЗКА</p>
+        </div>
+    </div>
+
+
+    <div class="modal-overlay-thanks">
+        <div class="modal">
+            <img class="modal__img" src="images/car-mobile.png" alt="">
+            <h3 class="modal__title">Спасибо!!!</h3>
+            <p class="modal__text">Наш менеджер в ближайшее время
+                свяжется с Вами.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src='js/main.min.js'></script>
+</body>
+
+</html>
